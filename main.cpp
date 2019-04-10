@@ -1,12 +1,17 @@
-#include <iostream>
+/*#include <iostream>
 #include <regex>
 #include <fstream>
 #include <ctime>
 #include <chrono>
 #include <string.h>
-#include <parser.h>
+#include <parser.h>*/
 
-int main(int argc, char *argv[])
+#include "parser.cpp"
+#include "catch.hpp"
+
+#define CATCH_CONFIG_MAIN
+CATCH_CONFIG_MAIN
+/*int main(int argc, char *argv[])
 {
     std::vector<std::string> criteria;
     criteria.push_back("python");
@@ -16,4 +21,4 @@ int main(int argc, char *argv[])
     parse.print_file(argv[2]);
     parse.print();
     return 0;
-}
+}*/

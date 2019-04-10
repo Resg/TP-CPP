@@ -3,7 +3,7 @@
 #include <chrono>
 #include <ctime>
 
-static size_t SKILLS_COUNT = 2;
+#define SKILLS_COUNT 2
 #ifndef REZUME_H
 #define REZUME_H
 

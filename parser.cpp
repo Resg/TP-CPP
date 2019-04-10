@@ -9,7 +9,7 @@ parser::parser(const char* file_name, std::vector<std::string> &criterias) : cri
     FileName = file_name;
 }
 
-void parser::parse() {
+int parser::parse() {
     std::ifstream stream(FileName);
     std::string buf;
     std::regex reg_n(".*(N|n)ame.? (.*)\\.");
@@ -35,6 +35,7 @@ void parser::parse() {
            }
        }
     stream.close();
+    return 0;
 }
 
 void parser::print_file(const char* file_name) {

@@ -20,7 +20,7 @@ public:
     parser();
     parser(const char* file_name, std::vector<std::string> &criterias);
     //~parser();
-    void parse();
+    int parse();
     void print_file(const char* file_name);
     void print();
     rezume get_rez();
